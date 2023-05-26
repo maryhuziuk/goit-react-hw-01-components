@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import { data } from "./data";
 import { getRandomColor } from "./changeColor";
 import { StatisticsContainer, StatisticsTitle, StatList, StatisticsItem, StatisticsLabel, StatisticsPercentage } from "./Statistics.styled";
 
