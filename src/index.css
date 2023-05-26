@@ -1,4 +1,7 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize; 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;/* bring in normalize.css styles */
 
 body {
   margin: 0;
