@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { getRandomColor } from "./changeColor";
+import { getRandomColor } from "../../helpers/changeColor";
 import { StatisticsContainer, StatisticsTitle, StatList, StatisticsItem, StatisticsLabel, StatisticsPercentage } from "./Statistics.styled";
 
   
@@ -23,6 +23,12 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    stats: PropTypes.array
+    stats: PropTypes.arrayOf(
+      PropTypes.exact({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
+      })
+    ).isRequired,
 }
   

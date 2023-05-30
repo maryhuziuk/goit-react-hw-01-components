@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
   border-radius: 5px;
   max-width: 300px;
   margin: 0 auto;
+ 
 `;
 
 export const StatisticsTitle = styled.h2`
@@ -19,7 +20,7 @@ export const StatList = styled.ul`
    display: flex;
     list-style: none;
     padding: 0;
-    margin: 0;
+    justify-content: center;
 `;
 
 export const StatisticsItem = styled.li`

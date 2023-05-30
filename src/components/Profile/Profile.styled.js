@@ -51,6 +51,7 @@ list-style: none;
 display: flex;
 padding: 12px;
 margin: 0;
+justify-content: center;
  li{
   display: grid;
   width: 80px;
